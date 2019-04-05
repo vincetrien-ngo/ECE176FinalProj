@@ -1,1 +1,4 @@
 
+module main();
+
+endmodule
