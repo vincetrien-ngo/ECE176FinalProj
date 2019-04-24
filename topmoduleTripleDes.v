@@ -6,11 +6,11 @@ in = intext;
 e = 1'b1;
 	for (d=1; d<=3; d=d+1) begin
 		if (s==1|s==3) begin
-		des dm (.out, .in, .s, .key1, .e, .clk);
+			des dm (.out, .in, .s, .k(key1), .e, .clk);
 		in = out;
 		end
 		else begin
-		des dm1 (.out, .in, .s, .key2, .e, .clk);
+			des dm1 (.out, .in, .s, .k(key2), .e, .clk);
 		in = out;
 		end
 	end
