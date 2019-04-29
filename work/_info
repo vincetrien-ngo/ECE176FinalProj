@@ -9,13 +9,13 @@ z2
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 vexpansion
-!s110 1556554108
+!s110 1556568632
 !i10b 1
-!s100 MUobc[Y2GHk4_PZn[V<cW2
-Ik6fCacfODej[_fLkGi^ZC2
+!s100 3<C9oYA<1OgJQT_c2[JJQ3
+I<Uldh<110W0lT`4?AjkfD0
 Z0 VDg1SIo80bB@j0V0VzS_@n1
 Z1 dC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj
-w1556554106
+w1556568074
 8C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\expansion.v
 FC:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\expansion.v
 L0 1
@@ -23,12 +23,34 @@ Z2 OP;L;10.4a;61
 r1
 !s85 0
 31
-!s108 1556554108.000000
+!s108 1556568632.000000
 !s107 C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\expansion.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\expansion.v|
 !s101 -O0
 !i113 1
 Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vkeyMixer
+Z4 !s110 1556568633
+!i10b 1
+!s100 Tf^]eDilHhGHld:k0_ng?2
+I9=4K:0Wd3j>SbHi7i`gR=1
+R0
+R1
+w1556567637
+8C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyMixer.v
+FC:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyMixer.v
+L0 1
+R2
+r1
+!s85 0
+31
+Z5 !s108 1556568633.000000
+!s107 C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyMixer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyMixer.v|
+!s101 -O0
+!i113 1
+R3
+nkey@mixer
 vmain
 !s110 1554432237
 !i10b 1
@@ -51,23 +73,45 @@ r1
 !i113 1
 R3
 vp_function
-!s110 1556554109
+R4
 !i10b 1
 !s100 MzB<K]DadiSNJ2=2M:M>S1
-I?7MEKWG7HHfiO@I7AZch>1
+IJS`kTjm3:V2>hP@;^7U=l1
 R0
 R1
 w1556517169
-8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
-FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
+8C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\p_function.v
+FC:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\p_function.v
 L0 1
 R2
 r1
 !s85 0
 31
-!s108 1556554109.000000
-!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v|
+R5
+!s107 C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\p_function.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\p_function.v|
 !s101 -O0
 !i113 1
 R3
+vtripleDes_tb
+R4
+!i10b 1
+!s100 JnGc>@JA013``EDzJSfz@0
+I;[dSoL_QR8j1P3O=Y9LE`1
+R0
+R1
+w1556566100
+8C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\tripleDes_tb.vt
+FC:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\tripleDes_tb.vt
+L0 1
+R2
+r1
+!s85 0
+31
+R5
+!s107 C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\tripleDes_tb.vt|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\tripleDes_tb.vt|
+!s101 -O0
+!i113 1
+R3
+ntriple@des_tb
