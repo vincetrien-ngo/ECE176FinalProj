@@ -1,4 +1,4 @@
-module expansion(input [31:0] in, output [47:0] out);
+module expansion(output [47:0] out, input [31:0] in);
     reg [7:0] bit8one;
     reg [7:0] bit8two;
     reg [7:0] bit8three;

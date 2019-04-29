@@ -1,9 +1,9 @@
 module s_function(input [47:0] in, output reg [31:0] out);
 // this will take like 1600 lines of code for case statements. probably a better way to do it but i cant think of how
 	
-	always@(in) begin
+	always@(*) begin
 		// S1
-		case(in{47,42}) begin
+		case(in[47:42]) begin
 			0: begin
 				case(in[46:43]) begin
 					0: begin
