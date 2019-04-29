@@ -3,5 +3,5 @@ reg [27:0] a, b;
 assign a =in[27:0] << 1;
 assing b =in[55:28] << 1;
 assing nextkey = {b,a};
-p_function #(56, 56) pf (.in(nextkey), .out(newkey));
+  p_function #(56, 48) pf (.in(nextkey), .out(newkey));
 endmodule
