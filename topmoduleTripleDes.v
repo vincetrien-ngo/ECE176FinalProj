@@ -2,7 +2,7 @@ module tripledes (output reg [63:0] password, input clk, e, s,[55:0] key1, key2,
 reg [63:0] in, out;
 genvar d;
 generate
-in = intext;
+assign in = intext;
 	for (d=1; d<=3; d=d+1) begin
 		if (s==1|s==3) begin
 			des dm (.out, .in, .s, .k(key1), .e);
