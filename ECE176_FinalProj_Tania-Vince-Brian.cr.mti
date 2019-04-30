@@ -40,4 +40,21 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	tripleDes_tb
 
-} {} {}}
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v {1 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyGrabber.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module keyGrabber
+
+Top level modules:
+	keyGrabber
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module keyMixer
+** Warning: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v(13): (vlog-2110) Illegal reference to net "nextkey".
+
+
+} {8.0 9.0} {}}
