@@ -1,37 +1,46 @@
-C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {0 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\des.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module des
-** Error: (vlog-13069) C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\des.v(13): near "=": syntax error, unexpected '='.
-
-** Error: C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\des.v(13): (vlog-13205) Syntax error found in the scope following 'kp'. Is there a missing '::'?
-
-
-} {4.0 5.0 6.0 7.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v {0 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\s_function.v}
+C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module s_function
-** Error: (vlog-13069) C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\s_function.v(6): near "begin": syntax error, unexpected begin.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v(15): near "endmodule": syntax error, unexpected endmodule.
 
 
-} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt {1 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\tripleDes_tb.vt}
+} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module des
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(13): near "=": syntax error, unexpected '='.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(13): (vlog-13205) Syntax error found in the scope following 'kp'. Is there a missing '::'?
+
+
+} {4.0 5.0 6.0 7.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module p_function
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v(4): The generate if condition must be a constant expression.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v(16): The generate if condition must be a constant expression.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v(29): The generate if condition must be a constant expression.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v(37): The generate if condition must be a constant expression.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v(50): The generate if condition must be a constant expression.
+
+} {4.0 9.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module expansion
+
+Top level modules:
+	expansion
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tripledes
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v(9): The generate if condition must be a constant expression.
+
+} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module tripleDes_tb
 
 Top level modules:
 	tripleDes_tb
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v {1 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\p_function.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module p_function
-
-Top level modules:
-	p_function
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {0 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\topmoduleTripleDes.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tripledes
-** Error: C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\topmoduleTripleDes.v(9): The generate if condition must be a constant expression.
-
-} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none {C:\Users\V_Trien_Ngo-PC\Documents\GitHub\ECE176FinalProj\keyMixer.v}
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module keyMixer
 
