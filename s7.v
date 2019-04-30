@@ -1,6 +1,7 @@
-function [3:0] s7;
+task s7;
+	output [3:0] s7;
 	input [5:0] in;
-	
+	begin
 
 		case(in{5,0}) begin
 			0: begin
@@ -212,3 +213,5 @@ function [3:0] s7;
 				endcase
 			end
 		endcase
+	end
+endtask
