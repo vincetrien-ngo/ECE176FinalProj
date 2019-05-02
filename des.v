@@ -5,13 +5,15 @@ reg [31:0] sr, pr, R_i, L_i;
 reg [55:0] kp, ks;
 reg [15:0] round;
 wire [31:0] wL_i;
+wire [63:0] w_in;
 
 generate
 	
 if (e) begin   //this is the encryption order
 	p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
-	R_i = in[31:0];
-	L_i = in[63:32];
+	p_function #(64, 64, 0) init (.in(in), .out(w_in));
+	R_i = w_in[31:0];
+	L_i = w_in[63:32];
 	round = 0;
 	for (t=1; t<=16; t=t+1) begin  //repeats it 16 times just like specified in the algorithm
 	round = round + 1;
@@ -27,12 +29,14 @@ if (e) begin   //this is the encryption order
 	end
 	s=s+1'b1; // what is s? only 1 bit?
 	e=~e;
-	out = {L_i, R_i};
+	p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
+	
 end
 else begin   //this is the decryption order
 	p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
-	R_i = in[31:0];
-	L_i = in[63:32];
+	p_function #(64, 64, 0) init (.in(in), .out(w_in));
+	R_i = w_in[31:0];
+	L_i = w_in[63:32];
 	round = 0;
 	for (t=1; t<=16; t=t+1) begin  //repeats it 16 times just like specified in the algorithm
 	round = round + 1;
@@ -48,7 +52,7 @@ else begin   //this is the decryption order
 	end
 	s=s+1'b1; // what is s? only 1 bit?
 	e=~e;
-	out = {L_i, R_i};
+	p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 end
 endgenerate
 
