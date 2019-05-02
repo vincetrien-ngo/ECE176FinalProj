@@ -13,5 +13,5 @@ module keyMixer (output [55:0] nextkey, newkey, input [4:0] t, [55:0] in);
     nextkey = {b,a};
     //change p into a function and put here
   end
-  p_function #(56, 48) pf (.in(nextkey), .out(newkey));
+  p_function #(56, 48, 5) pf (.in(nextkey), .out(newkey));
 endmodule

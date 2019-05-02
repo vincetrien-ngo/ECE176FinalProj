@@ -1,4 +1,4 @@
-module p_function #(parameter IN = 64, OUT = 64) (input [IN:1] in, input [2:0] sel, output reg [OUT:1] out);	
+module p_function #(parameter IN = 64, OUT = 64, sel = 0) (input [IN:1] in,  output reg [OUT:1] out);	
 
 
 always@(*) begin
