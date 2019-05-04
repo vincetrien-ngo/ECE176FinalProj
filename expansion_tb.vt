@@ -1,0 +1,15 @@
+module expansion_tb();
+    reg [31:0] in;
+    wire [47:0] out;
+
+    expansion u1 (
+        .in(in),
+        .out(out)
+        );
+
+    initial begin
+        #25 assign in = 32'b0;
+        #50 assign in = 32'b01010101010101010101010101010101;
+    end
+
+endmodule

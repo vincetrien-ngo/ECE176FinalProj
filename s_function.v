@@ -12,4 +12,6 @@ module s_function(input [47:0] in, output reg [31:0] out);
 		s7(out[7:4], in[11:6]);
 		s8(out[3:0], in[5:0]);
 
+	end
+
 endmodule		

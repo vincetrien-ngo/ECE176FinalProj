@@ -21,4 +21,5 @@ module keyGrabber(output [55:0] key1, key2);
         // $readmemh("key1.txt",key2);
 
     end
+
 endmodule

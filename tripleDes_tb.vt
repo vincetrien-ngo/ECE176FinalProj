@@ -1,4 +1,27 @@
 module tripleDes_tb();
+    reg clk, e, s;
+    reg [55:0] key1, key2;
+    reg [63:0] intext;
 
+    wire [63:0] password;
+
+    initial begin
+        assign clk = 1'b0;
+        assign e = 1'b0;
+        assign s = 1'b0;
+        assign key1 = 56'b0;
+        assign key2 = 56'b0;
+        assign intext = 64'b0;
+    end
+
+    tripledes u0(
+        .password(password) ,
+        .clk(clk)           ,
+        .e(e)               ,
+        .s(s)               ,
+        .key1(key1)         ,
+        .key2(key2)         ,
+        .intext(intext)     
+    );
 
 endmodule

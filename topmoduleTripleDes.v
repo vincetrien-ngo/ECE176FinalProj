@@ -8,15 +8,11 @@ generate
 	for (d=1; d<=3; d=d+1) begin
 		if (s==1|s==3) begin
 			des dm (.out, .in, .s, .k(key1), .e);
-			initial begin
-				assign in = out;
-			end
+			in = out;
 		end
 		else begin
 			des dm1 (.out, .in, .s, .k(key2), .e);
-			initial begin
-				assign in = out;
-			end
+			in = out;
 		end
 	end
 endgenerate
