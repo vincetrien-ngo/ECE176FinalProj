@@ -3,9 +3,9 @@ task s4;
 	input [5:0] in;
 	begin
 
-		case(in{5,0}) begin
+		case({in[5],in[0]}) 
 			0: begin
-				case(in[4:1]) begin
+				case(in[4:1]) 
 					0: begin
 						s4 = 4'd7;
 					end
@@ -57,7 +57,7 @@ task s4;
 				endcase
 			end	
 			1: begin
-				case(in[4:1]) begin
+				case(in[4:1]) 
 					0: begin
 						s4 = 4'd13;
 					end
@@ -109,7 +109,7 @@ task s4;
 				endcase			
 			end
 			2: begin
-				case(in[4:1]) begin
+				case(in[4:1]) 
 					0: begin
 						s4 = 4'd10;
 					end
@@ -161,7 +161,7 @@ task s4;
 				endcase
 			end
 			3: begin
-				case(in[4:1]) begin
+				case(in[4:1]) 
 					0: begin
 						s4 = 4'd3;
 					end

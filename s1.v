@@ -1,11 +1,11 @@
-task sl;
+task s1;
 	output [3:0] s1;
 	input [5:0] in;
 	begin
 
-		case(in{5,0}) begin
+		case({in[5],in[0]}) 
 			0: begin
-				case(in[4:1]) begin
+				case(in[4:1]) 
 					0: begin
 						s1 = 4'd14;
 					end
@@ -57,7 +57,7 @@ task sl;
 				endcase
 			end	
 			1: begin
-				case(in[46:43]) begin
+				case(in[4:1]) 
 					0: begin
 						s1 = 4'd0;
 					end
@@ -109,7 +109,7 @@ task sl;
 				endcase			
 			end
 			2: begin
-				case(in[46:43]) begin
+				case(in[4:1]) 
 					0: begin
 						s1 = 4'd4;
 					end
@@ -161,7 +161,7 @@ task sl;
 				endcase
 			end
 			3: begin
-				case(in[46:43]) begin
+				case(in[4:1]) 
 					0: begin
 						s1 = 4'd15;
 					end

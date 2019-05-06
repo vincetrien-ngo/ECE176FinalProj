@@ -1,5 +1,13 @@
-module s_function(input [47:0] in, output reg [31:0] out);
 
+module s_function(input [47:0] in, output reg [31:0] out);
+`include "s1.v"
+`include "s2.v"
+`include "s3.v"
+`include "s4.v"
+`include "s5.v"
+`include "s6.v"
+`include "s7.v"
+`include "s8.v"
 	
 	always@(in) begin
 		
@@ -11,5 +19,5 @@ module s_function(input [47:0] in, output reg [31:0] out);
 		s6(out[11:8], in[17:12]);
 		s7(out[7:4], in[11:6]);
 		s8(out[3:0], in[5:0]);
-
+	end
 endmodule		
