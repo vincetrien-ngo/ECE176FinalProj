@@ -1,4 +1,4 @@
-module des (output reg [63:0] out, input s, e, [63:0] k, [63:0] in);
+module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);
 genvar t;
 reg [47:0] exp, is, kc;
 reg [31:0] sr, pr, R_i, L_i;
@@ -54,7 +54,6 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 		
@@ -102,7 +101,6 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		s=s+1'b1;
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 	end
