@@ -1,12 +1,9 @@
 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module des
-** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(57): near "=": syntax error, unexpected '='.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(17): The generate if condition must be a constant expression.
 
-** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(57): (vlog-13205) Syntax error found in the scope following 's'. Is there a missing '::'?
-
-
-} {4.0 5.0 6.0 7.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
+} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module keyGrabber
 
@@ -33,13 +30,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	expansion
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tripledes
-
-Top level modules:
-	tripledes
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015

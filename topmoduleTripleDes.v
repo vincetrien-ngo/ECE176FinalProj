@@ -12,6 +12,10 @@ generate
 				.out(in)	, 
 				.in(out)
 			);//in = out;
+			enot u2(
+				e_o(e)	,
+				e(e)	
+			);
 		end
 		else begin
 			des dm1 (.out, .in, .k(key2), .e);
@@ -19,6 +23,10 @@ generate
 				.out(in)	, 
 				.in(out)
 			);//in = out;
+			enot u3(
+				e_o(e)	,
+				e(e)	
+			);
 		end
 	end
 endgenerate

@@ -56,12 +56,6 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		splus1_enot u4(
-			.s_o(s)	,
-			.e_o(e)	,
-			.s(s)	,
-			.e(e)	
-		);
 		//s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
 		//e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
@@ -110,12 +104,8 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		splus1_enot uneg4(
-			.s_o(s)	,
-			.e_o(e)	,
-			.s(s)	,
-			.e(e)	
-		);
+		//s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
+		//e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 	end
 
