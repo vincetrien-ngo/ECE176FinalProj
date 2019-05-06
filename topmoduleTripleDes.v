@@ -6,23 +6,33 @@ end
 genvar d;
 generate
 	for (d=1; d<=3; d=d+1) begin
-		if (s==1|s==3) begin
-			des dm (.out, .in, .s, .k(key1), .e);
-			initial begin
-				assign in = out;
-			end
+		if (d==1|d==3) begin
+			des dm (.out, .in, .k(key1), .e);
+			equals u0(
+				.out(in)	, 
+				.in(out)
+			);//in = out;
+			enot u2(
+				e_o(e)	,
+				e(e)	
+			);
 		end
 		else begin
-			des dm1 (.out, .in, .s, .k(key2), .e);
-			initial begin
-				assign in = out;
-			end
+			des dm1 (.out, .in, .k(key2), .e);
+			equals u1(
+				.out(in)	, 
+				.in(out)
+			);//in = out;
+			enot u3(
+				e_o(e)	,
+				e(e)	
+			);
 		end
 	end
 endgenerate
-always @(posedge clk)
-begin
+// always @(posedge clk)
+// begin
 
-end
+// end
 endmodule
 
