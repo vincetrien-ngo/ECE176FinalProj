@@ -52,7 +52,7 @@ generate
 			p_function #(32, 32, 3) tp (.in(sr), .out(pr)); //this one is dealing with 32 bits, need parameter
 			R_i = pr ^ wL_i;
 		end
-		s=s+1'b1; // what is s? only 1 bit?
+		s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 		
@@ -75,7 +75,7 @@ generate
 			p_function #(32, 32, 3) tp (.in(sr), .out(pr)); //this one is dealing with 32 bits, need parameter
 			R_i = pr ^ wL_i;
 		end
-		s=s+1'b1; // what is s? only 1 bit?
+		s=s+1'b1;
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 	end
