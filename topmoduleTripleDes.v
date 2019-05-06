@@ -16,9 +16,9 @@ generate
 		end
 	end
 endgenerate
-always @(posedge clk)
-begin
+// always @(posedge clk)
+// begin
 
-end
+// end
 endmodule
 

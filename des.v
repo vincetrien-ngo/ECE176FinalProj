@@ -4,21 +4,46 @@ reg [47:0] exp, is, kc;
 reg [31:0] sr, pr, R_i, L_i;
 reg [55:0] kp, ks;
 reg [15:0] round;
+
+// reg [47:0] r1_exp, r1_is, r1_kc;
+// reg [31:0] sr, pr, R_i, L_i;
+// reg [55:0] kp, ks;
+// reg [15:0] round;
+
+// reg [47:0] exp, is, kc;
+// reg [31:0] sr, pr, R_i, L_i;
+// reg [55:0] kp, ks;
+// reg [15:0] round;
+
 wire [31:0] wL_i;
 wire [63:0] w_in;
+
+assign round = 0;
 
 generate
 		
 	if (e) begin   //this is the encryption order
 		p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
 		p_function #(64, 64, 0) init (.in(in), .out(w_in));
-		R_i = w_in[31:0];
-		L_i = w_in[63:32];
-		round = 0;
+		desRounds u0(
+			.new_L(L_i)			, 
+			.new_R(R_i)			, 
+			.R_L_input(w_in)	,
+			.round(round)
+		);
+		// R_i = w_in[31:0];
+		// L_i = w_in[63:32];
+		// round = 0;
 		for (t=1; t<=16; t=t+1) begin  //repeats it 16 times just like specified in the algorithm
-			round = round + 1;
-			wL_i = L_i;
-			L_i = R_i;
+			// round = round + 1;
+			// wL_i = L_i;
+			// L_i = R_i;
+			desRounds u0(
+				.new_L(wL_i)			, 
+				.new_R(L_i)				, 
+				.R_L_input({L_i,R_i})	,
+				.round(round)
+			);
 			expansion ex (.in(R_i), .out(exp));    //expands to 48
 			keyMixer km (.in(kp), .nextkey(ks), .newkey(kc), .t(round));  //pass to key mixer which breaks shifts does func and returns a 48 bit change key
 			kp= ks;
