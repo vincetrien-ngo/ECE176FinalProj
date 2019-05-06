@@ -1,4 +1,4 @@
-module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);
+module des (output reg [63:0] out, input s, e, [63:0] k, [63:0] in);
 genvar t;
 reg [47:0] exp, is, kc;
 reg [31:0] sr, pr, R_i, L_i;
@@ -15,7 +15,7 @@ generate
 	if (e) begin   //this is the encryption order
 		p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
 		p_function #(64, 64, 0) init (.in(in), .out(w_in));
-		desRounds unot0(
+		desRounds u0(
 			.new_L(L_i)			, 
 			.new_R(R_i)			, 
 			.R_L_input(w_in)	,
@@ -36,9 +36,9 @@ generate
 			);
 			expansion ex (.in(R_i), .out(exp));    //expands to 48
 			keyMixer km (.in(kp), .nextkey(ks), .newkey(kc), .t(round));  //pass to key mixer which breaks shifts does func and returns a 48 bit change key
-			equals_kp_ks u1(
-				.kp(kp)	, 
-				.ks(ks)
+			equals u1(
+				.out(kp)	, 
+				.in(ks)
 			);// kp= ks;
 			expon u2(
 				.out(is)		,
@@ -54,6 +54,7 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
+		s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 		
@@ -83,9 +84,9 @@ generate
 			);
 			expansion ex (.in(R_i), .out(exp));    //expands to 48
 			keyMixer km (.in(kp), .nextkey(ks), .newkey(kc), .t(round));  //pass to key mixer which breaks shifts does func and returns a 48 bit change key
-			equals_kp_ks uneg1(
-				.kp(kp)	, 
-				.ks(ks)
+			equals uneg1(
+				.out(kp)	, 
+				.in(ks)
 			);// kp= ks;
 			expon uneg2(
 				.out(is)		,
@@ -101,6 +102,7 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
+		s=s+1'b1;
 		e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 	end
