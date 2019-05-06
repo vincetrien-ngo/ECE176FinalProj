@@ -6,15 +6,15 @@ end
 genvar d;
 generate
 	for (d=1; d<=3; d=d+1) begin
-		if (s==1|s==3) begin
-			des dm (.out, .in, .s, .k(key1), .e);
+		if (d==1|d==3) begin
+			des dm (.out, .in, .d, .k(key1), .e);
 			equals u0(
 				.out(in)	, 
 				.in(out)
 			);//in = out;
 		end
 		else begin
-			des dm1 (.out, .in, .s, .k(key2), .e);
+			des dm1 (.out, .in, .d, .k(key2), .e);
 			equals u1(
 				.out(in)	, 
 				.in(out)
