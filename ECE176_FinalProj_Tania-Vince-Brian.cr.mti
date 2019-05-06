@@ -1,9 +1,23 @@
 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module des
-** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(17): The generate if condition must be a constant expression.
+** Error: (vlog-13060) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(18): near "generate": Cannot nest generate regions.  Try removing inner generate/endgenerate keyword pair.
 
-} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(63): near "endgenerate": syntax error, unexpected endgenerate.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(68): 'init' already declared in this scope.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(111): 'inv_init' already declared in this scope.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(112): near "endgenerate": syntax error, unexpected endgenerate.
+
+
+} {4.0 5.0 6.0 7.0 8.0 11.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module enot
+
+Top level modules:
+	enot
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module keyGrabber
 
@@ -45,13 +59,9 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	tripleDes_tb
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {2 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module keyMixer
-** Warning: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-** Warning: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
 
 Top level modules:
 	keyMixer
