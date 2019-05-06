@@ -1,6 +1,7 @@
-module splus1_enot(output reg [47:0] out, input [47:0] thisto, [47:0] that);
+module splus1_enot(output reg s_o, e_o, input s, e);
     initial begin
-        assign out = thisto ^ that;
+        assign s_o = s + 1'b1;
+        assign e_o = ~e;
     end
 endmodule
 

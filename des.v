@@ -8,14 +8,16 @@ reg [15:0] round;
 wire [31:0] wL_i;
 wire [63:0] w_in;
 
-assign round = 0;
+initial begin
+	assign round = 0;
+end
 
 generate
 		
 	if (e) begin   //this is the encryption order
 		p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
 		p_function #(64, 64, 0) init (.in(in), .out(w_in));
-		desRounds ufirst0(
+		desRounds unot0(
 			.new_L(L_i)			, 
 			.new_R(R_i)			, 
 			.R_L_input(w_in)	,
@@ -54,8 +56,14 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
-		e=~e;
+		splus1_enot u4(
+			.s_o(s)	,
+			.e_o(e)	,
+			.s(s)	,
+			.e(e)	
+		);
+		//s=s+1'b1; // s is the start signal, it tells the topmodule how many iterations have been done and keeps trak of which key to use. 
+		//e=~e;
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 		
 	end
@@ -102,8 +110,12 @@ generate
 			);
 			//R_i = pr ^ wL_i;
 		end
-		s=s+1'b1;
-		e=~e;
+		splus1_enot uneg4(
+			.s_o(s)	,
+			.e_o(e)	,
+			.s(s)	,
+			.e(e)	
+		);
 		p_function #(64, 64, 1) inv_init (.in({R_i,L_i}), .out(out));
 	end
 
