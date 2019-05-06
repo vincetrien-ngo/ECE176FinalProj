@@ -15,7 +15,7 @@ generate
 	if (e) begin   //this is the encryption order
 		p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
 		p_function #(64, 64, 0) init (.in(in), .out(w_in));
-		desRounds u0(
+		desRounds ufirst0(
 			.new_L(L_i)			, 
 			.new_R(R_i)			, 
 			.R_L_input(w_in)	,
