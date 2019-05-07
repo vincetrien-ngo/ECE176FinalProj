@@ -3,24 +3,17 @@ reg [63:0] in, out;
 initial begin
 	assign in = intext;
 end
+
 genvar d;
 generate
 	for (d=1; d<=3; d=d+1) begin
-		if ((d==1|d==3)&e) 
+		if ((d==1|d==3)) 
 		begin
-			encrypt em (.out, .in, .k(key1));
+			des em (.out, .in, .k(key1), .e);
 			equals u0(.out(in),.in(out));//in = out;
 		end
-		else if ((d==1|d==3)&!e)begin
-			decrypt dm (.out, .in, .k(key1));
-			equals u5(.out(in),.in(out));//in = out;
-			end 		
-		else if (d==2&e) begin		
-				decrypt dm1 (.out, .in, .k(key2));
-				equals u1(.out(in), .in(out));//in = out;
-			end
 		else begin
-				encrypt em1 (.out, .in, .k(key2));
+				des em1 (.out, .in, .k(key2), .e);
 				equals u6(.out(in), .in(out));//in = out;
 		end
 	end
