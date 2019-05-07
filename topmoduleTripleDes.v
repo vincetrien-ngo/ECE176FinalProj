@@ -1,6 +1,4 @@
 module tripledes (output reg [63:0] password, input clk, e_i,input [55:0] key1, key2, input [63:0] intext);
-	`include "decrypt.v";
-	`include "encrypt.v";
 	reg [63:0] in, out;
 	reg e;
 
