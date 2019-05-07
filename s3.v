@@ -1,7 +1,7 @@
-task s3;
-	output [3:0] s3;
-	input [5:0] in;
-	begin
+module s3(
+	output reg[3:0] s3,
+	input [5:0] in);
+	initial begin
 
 		case({in[5],in[0]}) 
 			0: begin
@@ -214,4 +214,4 @@ task s3;
 			end
 		endcase
 	end
-endtask
+endmodule

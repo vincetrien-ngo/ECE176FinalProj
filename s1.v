@@ -1,7 +1,7 @@
-task s1;
-	output [3:0] s1;
-	input [5:0] in;
-	begin
+module s1(
+	output reg[3:0] s1,
+	input [5:0] in);
+	initial begin
 
 		case({in[5],in[0]}) 
 			0: begin
@@ -214,4 +214,4 @@ task s1;
 			end
 		endcase
 	end
-endtask
+endmodule
