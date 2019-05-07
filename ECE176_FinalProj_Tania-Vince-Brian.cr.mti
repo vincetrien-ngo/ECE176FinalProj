@@ -1,12 +1,49 @@
-C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module des
-** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v(17): The generate if condition must be a constant expression.
 
-} {4.0 5.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v
+Top level modules:
+	des
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(8): near "wire": syntax error, unexpected wire.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(11): Declarations not allowed in unnamed block.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(12): (vlog-2730) Undefined variable: 'p_function'.
+
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(12): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(14): (vlog-2730) Undefined variable: 'w_in'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(14): Checker 'desRounds' not found. Instantiation 'unot0' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(17): (vlog-2730) Undefined variable: 'wL_i'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(17): (vlog-2730) Undefined variable: 'round'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(17): Checker 'desRounds' not found. Instantiation 'u0' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(18): Checker 'expansion' not found. Instantiation 'ex' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(19): Checker 'keyMixer' not found. Instantiation 'km' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(20): Checker 'equals' not found. Instantiation 'u1' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(21): Checker 'expon' not found. Instantiation 'u2' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(22): Checker 's_function' not found. Instantiation 'st' must be of a visible checker.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(23): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(24): Checker 'expon' not found. Instantiation 'u3' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(17): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(18): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(19): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(20): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(21): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(22): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(24): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(27): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v(14): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+
+} {3.0 4.0 5.0 6.0 7.0 9.0 10.0 11.0 12.0 13.0 14.0 16.0 17.0 18.0 19.0 26.0 27.0 36.0 37.0 38.0} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module enot
 
@@ -34,6 +71,20 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	s_function
 
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module equals
+
+Top level modules:
+	equals
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tripleDes_tb
+
+Top level modules:
+	tripleDes_tb
+
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module tripledes
@@ -55,12 +106,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	p_function
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tripleDes_tb
+-- Compiling module expansion_tb
 
 Top level modules:
-	tripleDes_tb
+	expansion_tb
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -69,13 +120,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	keyMixer
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module expansion_tb
-
-Top level modules:
-	expansion_tb
-
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module expon
@@ -83,11 +127,42 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	expon
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals_kp_ks.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals_kp_ks.v
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v {0 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module equals_kb_ks
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
 
-Top level modules:
-	equals_kb_ks
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(9): near "wire": syntax error, unexpected wire.
 
-} {} {}}
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(12): Declarations not allowed in unnamed block.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(14): (vlog-2730) Undefined variable: 'p_function'.
+
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(14): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(16): (vlog-2730) Undefined variable: 'w_in'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(16): Checker 'desRounds' not found. Instantiation 'ureal0' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(20): (vlog-2730) Undefined variable: 'wL_i'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(20): Checker 'desRounds' not found. Instantiation 'uneg0' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(21): Checker 'expansion' not found. Instantiation 'ex' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(22): (vlog-2730) Undefined variable: 'round'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(22): Checker 'keyMixer' not found. Instantiation 'km' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(23): Checker 'equals' not found. Instantiation 'uneg1' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(24): Checker 'expon' not found. Instantiation 'uneg2' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(25): Checker 's_function' not found. Instantiation 'st' must be of a visible checker.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(26): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(27): Checker 'expon' not found. Instantiation 'uneg3' must be of a visible checker.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(20): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(21): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(22): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(23): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(24): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(25): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(27): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+** Error: (vlog-13069) C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(29): near "#": syntax error, unexpected '#'.
+
+** Error: C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v(16): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+
+} {3.0 4.0 5.0 6.0 7.0 9.0 10.0 11.0 12.0 13.0 14.0 16.0 17.0 20.0 21.0 26.0 27.0 36.0 37.0 38.0} {}}

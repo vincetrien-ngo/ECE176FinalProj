@@ -17,7 +17,7 @@ module tripleDes_tb();
     tripledes u0(
         .password(password) ,
         .clk(clk)           ,
-        .e(e)               ,
+        .e_i(e)               ,
         .s(s)               ,
         .key1(key1)         ,
         .key2(key2)         ,
