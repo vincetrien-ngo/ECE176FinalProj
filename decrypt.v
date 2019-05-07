@@ -1,4 +1,4 @@
-task decrypt();
+task decrypt;
 output reg [63:0] out;
 input [63:0] k, in;
     reg [47:0] exp, is, kc;
