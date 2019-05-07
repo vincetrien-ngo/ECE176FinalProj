@@ -1,6 +1,7 @@
 task decrypt;
 output reg [63:0] out;
-input [63:0] k, in;
+input [63:0] in;
+input [55:0] k;
     reg [47:0] exp, is, kc;
     reg [31:0] sr, pr, R_i, L_i;
     reg [55:0] kp, ks;
