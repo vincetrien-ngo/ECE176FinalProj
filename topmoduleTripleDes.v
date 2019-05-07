@@ -1,4 +1,4 @@
-module tripledes (output reg [63:0] password, input clk, e_i, s,input [55:0] key1, key2, input [63:0] intext);
+module tripledes (output reg [63:0] password, input clk, e_i,input [55:0] key1, key2, input [63:0] intext);
 	reg [63:0] in, out;
 	reg e;
 
@@ -11,7 +11,7 @@ module tripledes (output reg [63:0] password, input clk, e_i, s,input [55:0] key
 	generate
 		for (d=1; d<=3; d=d+1) begin : forloop 
 			if (d==1|d==3) begin
-				des dm (.out(), .in(), .k(key1), .e());
+				des dm (.out(), .in(), .k(key1));
 				equals u0(
 					.out(in)	, 
 					.in(out)
@@ -22,7 +22,7 @@ module tripledes (output reg [63:0] password, input clk, e_i, s,input [55:0] key
 				);
 			end
 			else begin
-				des dm1 (.out, .in, .k(key2), .e);
+				des dm1 (.out, .in, .k(key2));
 				equals u1(
 					.out(in)	, 
 					.in(out)
