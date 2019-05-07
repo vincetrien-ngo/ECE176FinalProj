@@ -1,5 +1,5 @@
 
-module s_function(input [47:0] in, input [3:0] rin, output reg [31:0] out, output [3:0] rout);
+module s_function(input [47:0] in, output reg [31:0] out);
 
 	
 	//always@(in) begin
@@ -12,7 +12,7 @@ module s_function(input [47:0] in, input [3:0] rin, output reg [31:0] out, outpu
 		s6 s6(.s6(out[11:8]), .in(in[17:12]));
 		s7 s7(.s7(out[7:4]), .in(in[11:6]));
 		s8 s8(.s8(out[3:0]), .in(in[5:0]));
-		assign rout = rin +1;
+		
 	//end
 
 endmodule		
