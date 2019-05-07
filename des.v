@@ -8,11 +8,13 @@ module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);
 	reg [63:0] w_in;
 	reg [63:0] tmpout;
 	reg [3:0] rin, rout;
+	reg encrypt;
 
 		
 	initial begin
 		R_i = w_in[31:0];
 		L_i = w_in[63:32];
+		encrypt = e;
 	end
 	
 	always @(*) begin
@@ -24,6 +26,7 @@ module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);
 		if(rout == 15) begin
 			rin = 0;
 			out = tmpout;
+			encrypt = ~encrypt;
 		end
 	end
 	for (t=1; t<=16; t=t+1) begin  //repeats it 16 times just like specified in the algorithm
