@@ -85,13 +85,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	tripleDes_tb
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tripledes
-
-Top level modules:
-	tripledes
-
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module expansion
@@ -106,19 +99,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	p_function
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module expansion_tb
-
-Top level modules:
-	expansion_tb
-
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module keyMixer
 
 Top level modules:
 	keyMixer
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module expansion_tb
+
+Top level modules:
+	expansion_tb
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
