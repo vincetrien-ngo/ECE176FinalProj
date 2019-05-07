@@ -18,7 +18,7 @@ generate
 			desRounds u0(.new_L(wL_i)	,.new_R(L_i),.R_L_input({L_i,R_i}),.round(round));
 			expansion ex (.in(R_i), .out(exp));    //expands to 48
 			keyMixer km (.in(kp), .nextkey(ks), .newkey(kc), .t(round));  //pass to key mixer which breaks shifts does func and returns a 48 bit change key
-			equals u1(.out(kp),.in(ks));// kp= ks;
+			equals #(56) u1(.out(kp),.in(ks));// kp= ks;
 			expon u2(.out(is),.thisto(exp),.that(kc));//is= exp ^ kc;    //xor of the changed key and expanded part of text
 			s_function st (.in(is), .out(sr));
 			p_function #(32, 32, 3) tp (.in(sr), .out(pr)); //this one is dealing with 32 bits, need parameter
