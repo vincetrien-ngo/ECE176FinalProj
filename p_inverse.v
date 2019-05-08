@@ -1,4 +1,4 @@
-module p_inverse(input [64:1] in,  output  [64:1] out);
+module p_inverse(input [1:64] in,  output  [64:1] out);
 
 	assign out = 
 				{	in[40], in[8], in[48], in[16], in[56], in[24], in[64], in[32],

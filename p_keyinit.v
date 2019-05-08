@@ -1,4 +1,4 @@
-module p_keyinit(input [64:1] in,  output  [56:1] out);
+module p_keyinit(input [1:64] in,  output  [56:1] out);
 
 	assign out = 
 				{	in[57], in[49], in[41], in[33], in[25], in[17], in[9],

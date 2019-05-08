@@ -1,4 +1,4 @@
-module p_post_sf(input [32:1] in,  output  [32:1] out);
+module p_post_sf(input [1:32] in,  output  [32:1] out);
 
 	assign out = 
 				{	in[16], in[7], in[20], in[21], in[29], in[12], in[28], in[17],
