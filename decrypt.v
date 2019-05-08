@@ -1,5 +1,4 @@
 module decrypt (output [63:0] out, input [63:0] in, input [55:0] key);
-
 	
 	wire [31:0] w_Li [0:0] [0:16];
 	wire [31:0] w_Ri [0:0] [0:16];
