@@ -1,4 +1,4 @@
-module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);	
+module des (output reg [63:0] out, input e, input [63:0] k, input [63:0] in);	
 wire [63:0] dec, enc, w_in, w_ind;
 wire [55:0] kp;
 encrypt en (.out(enc), .in(w_in), .key(kp));

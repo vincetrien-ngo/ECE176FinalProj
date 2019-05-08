@@ -20,7 +20,7 @@ module encrypt (output [63:0] out, input [63:0] in, input [55:0] key);
 	genvar i;
 	
 	generate
-		for(i=0; i<=15; i=i+1) begin
+		for(i=0; i<=15; i=i+1) begin : encryptloop
 			expansion ex (.in(w_Ri[0][i]), .out(w_ex[0][i]));
 			expon #(48) u2(.out(w_xor[0][i]),.in1(w_ex[0][i]),.in2(w_Ki[0][i]));
 			s_function st (.in(w_xor[0][i]), .out(w_sf[0][i]));

@@ -31,27 +31,27 @@ module tripleDes_tb();
         outfile1=$fopen("key2.txt","r");
 
         while (!$feof(outfile)) begin
-            handle1 = $fscanf(outfile,"%h\n",intext);
+            handle1 = $fscanf(outfile,"%d\n",intext);
         end
         $fclose(outfile);
 
         while (!$feof(outfile0)) begin
-            handle2 = $fscanf(outfile0,"%h\n",key1);
+            handle2 = $fscanf(outfile0,"%d\n",key1);
         end
         $fclose(outfile0);
 
         while (!$feof(outfile1)) begin
-            handle3 = $fscanf(outfile1,"%h\n",key2);
+            handle3 = $fscanf(outfile1,"%d\n",key2);
         end
         $fclose(outfile1);
 
     end
 */
     initial begin
-        assign e = 1'b1;
-        assign key1 = 64'h0a000a00;
+        assign e = 1'b0;
+        assign key1 = 64'b01000100;
         //assign key2 = 56'b0;
-        assign intext = 64'h000a000a;
+        assign intext = 64'b1011000011111111101001000110010000000101000110001101111111101101;
 		assign tin = 55;
     end
 
