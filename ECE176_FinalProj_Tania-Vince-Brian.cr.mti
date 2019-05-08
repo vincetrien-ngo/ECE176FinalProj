@@ -1,16 +1,16 @@
-C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
+C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module des
+
+Top level modules:
+	des
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module enot
 
 Top level modules:
 	enot
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module desRounds
-
-Top level modules:
-	desRounds
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -39,13 +39,6 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	expansion
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tripledes
-
-Top level modules:
-	tripledes
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015

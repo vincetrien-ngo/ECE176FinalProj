@@ -17,5 +17,9 @@ module tripledes (output reg [63:0] password, input e, input [63:0] key1, key2, 
 		end
 	endgenerate
 
+	always @ (out) begin
+		password = out;
+	end
+
 endmodule
 
