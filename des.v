@@ -1,7 +1,7 @@
-module des (output reg [63:0] out, input e, [63:0] k, [63:0] in);	
+module des (output reg [63:0] out, input e, input [63:0] k, in);	
 wire [63:0] dec, enc;
-encrypt en (.out(enc), .in, .k);
-decrypt dn (.out(dec), .in, .k);
+encrypt en (.out(enc), .in(in), .k(k));
+decrypt dn (.out(dec), .in(in), .k(k));
 always @(*) begin
 if (e) out = enc;
 else out=dec;

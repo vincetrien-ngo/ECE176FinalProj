@@ -1,21 +1,44 @@
 module tripleDes_tb();
-    reg clk, e, s;
+    reg e, s;
     reg [63:0] key1, key2;
     reg [63:0] intext;
 
     wire [63:0] password;
 
+	integer outfile, outfile0, outfile1;
+    integer handle1, handle2, handle3;
+
     initial begin
-        assign clk = 1'b0;
+        outfile=$fopen("intext.txt","w");
+        outfile0=$fopen("key1.txt","r");
+        outfile1=$fopen("key2.txt","r");
+
+        while (!$feof(outfile)) begin
+            handle1 = $fscanf(outfile,"%h\n",intext);
+        end
+        $fclose(outfile);
+
+        while (!$feof(outfile0)) begin
+            handle2 = $fscanf(outfile0,"%h\n",key1);
+        end
+        $fclose(outfile0);
+
+        while (!$feof(outfile1)) begin
+            handle3 = $fscanf(outfile1,"%h\n",key2);
+        end
+        $fclose(outfile1);
+
+    end
+
+    initial begin
         assign e = 1'b0;
-        assign key1 = 56'b0;
-        assign key2 = 56'b0;
-        assign intext = 64'b0;
+        //assign key1 = 56'b0;
+        //assign key2 = 56'b0;
+        //assign intext = 64'b0;
     end
 
     tripledes u0(
         .password(password) ,
-        .clk(clk)           ,
         .e(e)               ,
         .key1(key1)         ,
         .key2(key2)         ,

@@ -1,5 +1,5 @@
 
-module keyMixer (output reg [55:0] nextkey, output [47:0] newkey, input [4:0] t, [55:0] in);
+module keyMixer (output reg [55:0] nextkey, output [47:0] newkey, input [4:0] t, input [55:0] in);
 
   reg [27:0] a, b;
   always @(*) begin
