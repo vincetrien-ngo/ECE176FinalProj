@@ -9,7 +9,7 @@ always @(*) begin
 if (e) out = enc;
 //else out=dec;
 end
-p_function #(64, 56, 4) kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
-p_function #(64, 64, 0) init (.in(in), .out(w_in));
+p_keyinit kper (.in(k), .out(kp));  //need to pass a parameter setting it to 56 bits!!!!
+p_initial init (.in(in), .out(w_in));
 endmodule
 
