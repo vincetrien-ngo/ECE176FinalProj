@@ -1,5 +1,4 @@
 module tripleDes_tb();
-    reg clk, e;
 
     reg e, s;
 
@@ -9,11 +8,11 @@ module tripleDes_tb();
 	
     wire [63:0] password;
 
-	wire [31:0] new_L, new_R;
-	wire [55:0] nextkey;
-	wire [47:0] newkey;
-	reg [4:0] t;
-	reg [55:0] in;
+	//wire [31:0] new_L, new_R;
+	//wire [55:0] nextkey;
+	//wire [47:0] newkey;
+	//reg [4:0] t;
+	//reg [55:0] in;
 
 	integer outfile, outfile0, outfile1;
     integer handle1, handle2, handle3;
@@ -47,7 +46,6 @@ module tripleDes_tb();
         //assign intext = 64'b0;
     end
 	
-/*
     tripledes u0(
         .password(password) ,
         .e(e)               ,
@@ -55,6 +53,5 @@ module tripleDes_tb();
         .key2(key2)         ,
         .intext(intext)     
     );
-*/
 
 endmodule
