@@ -31,7 +31,7 @@ module tripleDes_tb();
     end
 
     initial begin
-        assign e = 1'b0;
+        assign e = 1'b1;
         //assign key1 = 56'b0;
         //assign key2 = 56'b0;
         //assign intext = 64'b0;
