@@ -1,5 +1,6 @@
 module decrypt(output reg [63:0] out,input [63:0] in, k);
 
+
 wire [47:0] exp, is, kc;
 wire [31:0] sr, pr;
 wire [55:0]  ks;
@@ -27,6 +28,7 @@ generate
 		p_function #(64, 64, 1) inv_init (.in({R_i2,L_i2}), .out(tempout));
 endgenerate 
 always @ (*) out <= tempout;
+
 endmodule
 
 		

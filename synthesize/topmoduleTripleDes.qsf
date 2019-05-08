@@ -19,7 +19,7 @@
 #
 # Quartus Prime
 # Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-# Date created = 13:16:17  May 06, 2019
+# Date created = 18:50:58  May 07, 2019
 #
 # -------------------------------------------------------------------------- #
 #
@@ -41,8 +41,12 @@ set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY topmoduleTripleDes
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:16:17  MAY 06, 2019"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:50:58  MAY 07, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name VERILOG_FILE ../topmoduleTripleDes.v
 set_global_assignment -name VERILOG_FILE ../s8.v
 set_global_assignment -name VERILOG_FILE ../s7.v
@@ -55,20 +59,17 @@ set_global_assignment -name VERILOG_FILE ../s1.v
 set_global_assignment -name VERILOG_FILE ../s_function.v
 set_global_assignment -name VERILOG_FILE ../p_function.v
 set_global_assignment -name VERILOG_FILE ../keyMixer.v
-set_global_assignment -name VERILOG_FILE ../keyGrabber.v
 set_global_assignment -name VERILOG_FILE ../expon_is_expkc.v
 set_global_assignment -name VERILOG_FILE ../expansion.v
-set_global_assignment -name VERILOG_FILE ../equals_kp_ks.v
+set_global_assignment -name VERILOG_FILE ../equals.v
 set_global_assignment -name VERILOG_FILE ../enot.v
+set_global_assignment -name VERILOG_FILE ../encrypt.v
 set_global_assignment -name VERILOG_FILE ../desRounds.v
 set_global_assignment -name VERILOG_FILE ../des.v
-set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name BDF_FILE topmoduleTripleDes_block.bdf
-set_global_assignment -name VERILOG_FILE topmoduleTripleDes_toptop.v
+set_global_assignment -name VERILOG_FILE ../decrypt.v
+set_global_assignment -name BDF_FILE topmoduleTripleDes.bdf
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

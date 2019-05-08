@@ -8,35 +8,56 @@ z2
 !i10f 100
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
-vdes
-Z0 !s110 1557200245
+vdecrypt
+Z0 !s110 1557281989
 !i10b 1
-!s100 CLhb=JJnCS>KXOnXj^G>j2
-IQMOWP9TWh[fa^<X8dKUG:2
+!s100 WCQ^3cCF2BLK>7YaMh[gL3
+IBCl88>[Jkh4CBN5`YQNb93
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj
-w1557198799
-8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
-FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+w1557280962
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v
 L0 1
 Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z4 !s108 1557200245.000000
+Z4 !s108 1557281989.000000
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vdes
+Z6 !s110 1557281988
+!i10b 1
+!s100 ^8W:7fzJYMRV:M`JUn`S33
+ITaVAEVTQ`V>O`d47_5jm_2
+R1
+R2
+w1557279756
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z7 !s108 1557281988.000000
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v|
 !s101 -O0
 !i113 1
-Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+R5
 vdesRounds
-Z6 !s110 1557200246
+R0
 !i10b 1
-!s100 mad`cg?G5bd4VPTL[Vd341
-IIC>LXb6D7[1zDloWR48dD2
+!s100 ?Q2UcobCP_48=7W:Xf@Hk0
+IYRz1`;fkVa:5K@@Q`bRXz0
 R1
 R2
-w1557197480
+Z8 w1557254766
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v
 L0 1
@@ -44,15 +65,36 @@ R3
 r1
 !s85 0
 31
-Z7 !s108 1557200246.000000
+R4
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/desRounds.v|
 !s101 -O0
 !i113 1
 R5
 ndes@rounds
+vencrypt
+R0
+!i10b 1
+!s100 b1<EJC3IRmzeocnSN42G90
+ID>a3<SnOe5<3?4SnUDk6E3
+R1
+R2
+w1557281038
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/encrypt.v|
+!s101 -O0
+!i113 1
+R5
 venot
-R6
+R0
 !i10b 1
 !s100 @XZY1a5XD8NR7JR_O84kS0
 IifENeI`Mec?^BNWjGPcJZ2
@@ -66,20 +108,20 @@ R3
 r1
 !s85 0
 31
-R7
+R4
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v|
 !s101 -O0
 !i113 1
 R5
 vequals
-R6
+R0
 !i10b 1
-!s100 8HelSHCmf`YL3gY59Sa]22
-I:>]EJZ1HPS`lN;He]<Xl40
+!s100 IU2nHHN^?no2:I<zfISgn0
+IUR=oB^RfP4RBD_2WJD9LL0
 R1
 R2
-w1557199844
+R8
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v
 L0 1
@@ -87,7 +129,7 @@ R3
 r1
 !s85 0
 31
-R7
+R4
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v|
 !s101 -O0
@@ -115,13 +157,13 @@ r1
 !i113 1
 R5
 vexpansion
-R0
+R6
 !i10b 1
-!s100 3<C9oYA<1OgJQT_c2[JJQ3
-IDGaT>DaXd@GF8F<AO@1M12
+!s100 84HhCABU8RQgDUa[lZWL<2
+I1zV0lcfZdU@hmlcD4Q:M>3
 R1
 R2
-w1556568074
+w1557281456
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
 L0 1
@@ -129,20 +171,20 @@ R3
 r1
 !s85 0
 31
-R4
+R7
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v|
 !s101 -O0
 !i113 1
 R5
 vexpansion_tb
-R6
+R0
 !i10b 1
 !s100 fi``5mbXBmSkI<S4d6[2]2
 IS7WlH9aM>cE3Pj2H:Y^m]0
 R1
 R2
-Z8 w1557112587
+Z9 w1557112587
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
 L0 1
@@ -150,30 +192,30 @@ R3
 r1
 !s85 0
 31
-R7
+R4
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt|
 !s101 -O0
 !i113 1
 R5
 vexpon
-R6
+R0
 !i10b 1
-!s100 WTdCU`cjGU>em_ibz74Hf2
-IAPmmaPUkVXcSE4QamCj[f3
+!s100 <`69f2WWb>QENfdHd[_M71
+IY>YkgczCgjjb6f3:cSY732
 R1
 R2
-w1557119130
-Z9 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
-Z10 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
+w1557279488
+Z10 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
+Z11 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
 L0 1
 R3
 r1
 !s85 0
 31
-R7
-Z11 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v|
-Z12 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v|
+R4
+Z12 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v|
+Z13 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v|
 !s101 -O0
 !i113 1
 R5
@@ -185,27 +227,27 @@ IbZ1J9kC`RE<EU58U[=Td=0
 R1
 R2
 w1557119031
-R9
 R10
+R11
 L0 1
 R3
 r1
 !s85 0
 31
 !s108 1557119104.000000
-R11
 R12
+R13
 !s101 -O0
 !i113 1
 R5
 vkeyGrabber
-R6
+!s110 1557275416
 !i10b 1
 !s100 M1S1C[oMIm7IAe5b]n;IY3
 IeiOnhkK6Ajjjg8W<0[iP43
 R1
 R2
-R8
+R9
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v
 L0 1
@@ -213,7 +255,7 @@ R3
 r1
 !s85 0
 31
-R7
+!s108 1557275416.000000
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyGrabber.v|
 !s101 -O0
@@ -221,13 +263,13 @@ R7
 R5
 nkey@grabber
 vkeyMixer
-R0
+R6
 !i10b 1
-!s100 Ag[cYUJdD;bFm?VjFMmn30
-IQ7d`:bGnY0_5M^58mHa;a2
+!s100 2n0JXJGeM20=_;meI09oV2
+I@Gk@@2ZVSFea8_hKzc3Vl1
 R1
 R2
-Z13 w1557171819
+w1557279395
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 L0 2
@@ -235,7 +277,7 @@ R3
 r1
 !s85 0
 31
-R4
+R7
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v|
 !s101 -O0
@@ -264,13 +306,13 @@ r1
 !i113 1
 R5
 vp_function
-R0
+R6
 !i10b 1
 !s100 AXeoi3HBZBG8f18@2VF3T2
 IMGjUzd;mgTBdO=Ihi7LoT0
 R1
 R2
-R8
+R9
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
 L0 1
@@ -278,37 +320,197 @@ R3
 r1
 !s85 0
 31
-R4
+R7
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v|
 !s101 -O0
 !i113 1
 R5
-vs_function
+vs1
 R0
 !i10b 1
-!s100 4kd[MRWFA=`AINnOzhzX61
-Ie:FoCg9:n9UJ^?8lzJUCa1
+!s100 K5W9B?56XCBbiJAK8<k411
+I2bAm=hUd@Icifkc`R6]Sz3
 R1
 R2
-R13
-8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
-FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
-Fs1.v
-Fs2.v
-Fs3.v
-Fs4.v
-Fs5.v
-Fs6.v
-Fs7.v
-Fs8.v
-L0 2
+Z14 w1557203195
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s1.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s1.v
+L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 s8.v|s7.v|s6.v|s5.v|s4.v|s3.v|s2.v|s1.v|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v|
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s1.v|
+!s101 -O0
+!i113 1
+R5
+vs2
+R0
+!i10b 1
+!s100 7O<ZcXz^NDh6Ti5GF8o]83
+I0J:J^bJzHbfWJEWi:4ekz2
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v|
+!s101 -O0
+!i113 1
+R5
+vs3
+R0
+!i10b 1
+!s100 cF^dLD4UW8khO]R=U?G=h1
+Ib3^f?mk01WU=AM1N@HeDa3
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v|
+!s101 -O0
+!i113 1
+R5
+vs4
+Z15 !s110 1557281990
+!i10b 1
+!s100 ]k6X6U:4=ML78ng1?XTPn1
+IBJh4TlMbjTZ_o45e^IkFz3
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z16 !s108 1557281990.000000
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v|
+!s101 -O0
+!i113 1
+R5
+vs5
+R15
+!i10b 1
+!s100 eYdS38hTb8XRR^9>L9@FL3
+IaQ9=DinKdDMiaK;6^0ifi0
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v|
+!s101 -O0
+!i113 1
+R5
+vs6
+R15
+!i10b 1
+!s100 bU[S77XK_a5ITWL[o0gBd2
+IBe:=U[]]@jM_?_jnW37dD1
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s6.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s6.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s6.v|
+!s101 -O0
+!i113 1
+R5
+vs7
+R15
+!i10b 1
+!s100 M>VTTCLgdbA6E1W^Nd80`2
+IeNYM7e7WQ7:B:WJ`9f>=W1
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s7.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s7.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s7.v|
+!s101 -O0
+!i113 1
+R5
+vs8
+R15
+!i10b 1
+!s100 ^U@JT^h7df72ah:2;=n0m2
+IghGSzk?i;EZ8F4;1J04@m3
+R1
+R2
+R14
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s8.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s8.v
+L0 1
+R3
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s8.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s8.v|
+!s101 -O0
+!i113 1
+R5
+vs_function
+R6
+!i10b 1
+!s100 HBQL_Qe9I:AGU?L[2@^zl2
+I03Nj]6ClY=[P]hY78T8a?1
+R1
+R2
+R8
+8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
+FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v
+L0 2
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s_function.v|
 !s101 -O0
 !i113 1
@@ -335,13 +537,13 @@ r1
 !i113 1
 R5
 vtripledes
-!s110 1557199846
+R6
 !i10b 1
-!s100 ;;oWhbdZR]<BifE60e6^@1
-IoL3E4]o4=zn77DVXbZ^Ub2
+!s100 K_a94mLG[^QP:H=^_KH0I1
+IZdi^I^9nVTcV]S@d3<D7H3
 R1
 R2
-w1557199843
+w1557276004
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
 L0 1
@@ -349,7 +551,7 @@ R3
 r1
 !s85 0
 31
-!s108 1557199846.000000
+R7
 !s107 C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v|
 !s101 -O0
@@ -358,11 +560,11 @@ R5
 vtripleDes_tb
 R6
 !i10b 1
-!s100 L;m`U[6dnej?AS::7T6PV3
-I1AQl8HOP<Y=Ti30FA9@ke1
+!s100 3>?QQ0@QfEz?XL00T4Mgo1
+I^^O9I:7fg7Gh`C9R;]EAo0
 R1
 R2
-w1557198071
+w1557277615
 8C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
 FC:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
 L0 1

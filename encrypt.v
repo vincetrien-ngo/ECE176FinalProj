@@ -17,8 +17,7 @@ generate
 		
 		desRounds unot0(.new_L(L_i),.new_R(R_i),.R_L_input(w_in));
 
-		//for (t=1; t<=16; t=t+1) begin  //repeats it 16 times just like specified in the algorithm
-			desRounds u0(.new_L(wL_i)	,.new_R(L_i2),.R_L_input({L_i,R_i}));
+
 			expansion ex (.in(R_i), .out(exp));    //expands to 48
 			keyMixer km (.in(k1), .nextkey(ks), .newkey(kc), .t(round));  //pass to key mixer which breaks shifts does func and returns a 48 bit change key
 			equals #(56) u1(.out(kp2),.in(ks));// kp= ks;

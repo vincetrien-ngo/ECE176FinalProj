@@ -1,23 +1,46 @@
 module tripleDes_tb();
     reg clk, e;
+
+    reg e, s;
+
     reg [63:0] key1, key2;
     reg [63:0] intext;
 	reg [63:0] R_L_input;
 	
     wire [63:0] password;
+
 	wire [31:0] new_L, new_R;
 	wire [55:0] nextkey;
 	wire [47:0] newkey;
 	reg [4:0] t;
 	reg [55:0] in;
+
+	integer outfile, outfile0, outfile1;
+    integer handle1, handle2, handle3;
+
     initial begin
-        assign clk = 1'b0;
-        assign e = 1'b0;
-        assign key1 = 64'h000A0000;
-        assign key2 = 64'h00000A00;
-        assign intext = 64'h0000000A;
-		assign t = 1'b0001;
+        outfile=$fopen("intext.txt","r");
+        outfile0=$fopen("key1.txt","r");
+        outfile1=$fopen("key2.txt","r");
+
+        while (!$feof(outfile)) begin
+            handle1 = $fscanf(outfile,"%h\n",intext);
+        end
+        $fclose(outfile);
+
+        while (!$feof(outfile0)) begin
+            handle2 = $fscanf(outfile0,"%h\n",key1);
+        end
+        $fclose(outfile0);
+
+        while (!$feof(outfile1)) begin
+            handle3 = $fscanf(outfile1,"%h\n",key2);
+        end
+        $fclose(outfile1);
+
     end
+
+
 	
 	
 	//keyMixer k (.nextkey, .newkey, .t, .in(key2));
@@ -26,7 +49,6 @@ module tripleDes_tb();
 /*
     tripledes u0(
         .password(password) ,
-        .clk(clk)           ,
         .e(e)               ,
         .key1(key1)         ,
         .key2(key2)         ,
