@@ -1,7 +1,9 @@
 module tripleDes_tb();
     reg clk, e;
-
-    reg e, s;
+	
+	reg [47:0] tin;
+	wire [31:0] tout;
+   
 
     reg [63:0] key1, key2;
     reg [63:0] intext;
@@ -14,7 +16,7 @@ module tripleDes_tb();
 	wire [47:0] newkey;
 	reg [4:0] t;
 	reg [55:0] in;
-
+/*
 	integer outfile, outfile0, outfile1;
     integer handle1, handle2, handle3;
 
@@ -39,14 +41,16 @@ module tripleDes_tb();
         $fclose(outfile1);
 
     end
-
+*/
     initial begin
         assign e = 1'b1;
-        //assign key1 = 56'b0;
+        assign key1 = 64'h0a000a00;
         //assign key2 = 56'b0;
-        //assign intext = 64'b0;
+        assign intext = 64'h000a000a;
+		assign tin = 55;
     end
-	
+	des d (.out(password) , .e(e) , .k(key1) , .in(intext));
+	//s_function s(.in(tin), .out(tout));
 /*
     tripledes u0(
         .password(password) ,

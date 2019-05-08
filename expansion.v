@@ -1,27 +1,13 @@
-module expansion(output [47:0] out, input [31:0] in);
-    reg [7:0] bit8one;
-    reg [7:0] bit8two;
-    reg [7:0] bit8three;
-    reg [7:0] bit8four;
+module expansion(output [47:0] out, input [32:1] in);
+    
 
-    reg [9:0] bit10one;
-    reg [9:0] bit10two;
-    reg [9:0] bit10three;
-    reg [9:0] bit10four;
-
-    initial begin
-        bit8one = in[7:0];
-        bit8two = in[15:8];
-        bit8three = in[23:16];
-        bit8four = in[31:24];
-        
-        bit10one = {in[31],bit8one,in[8]};
-        bit10two = {in[7],bit8two,in[16]};
-        bit10three = {in[15],bit8three,in[24]};
-        bit10four = {in[23],bit8four,in[0]};
-
-    end
-
-    assign out = {bit10one,bit10two,bit10three,bit10four};
+    assign out = {	in[32], in[1], in[2], in[3], in[4], in[5], 
+					in[4], in[5], in[6], in[7], in[8], in[9], 
+					in[8], in[9], in[10], in[11], in[12], in[13], 
+					in[12], in[13], in[14], in[15], in[16], in[17], 
+					in[16], in[17], in[18], in[19], in[20], in[21], 
+					in[20], in[21], in[22], in[23], in[24], in[25], 
+					in[24], in[25], in[26], in[27], in[28], in[29], 
+					in[28], in[29], in[30], in[31], in[32], in[1]};
 
 endmodule

@@ -1,8 +1,7 @@
 module s3(
 	output reg[3:0] s3,
 	input [5:0] in);
-	initial begin
-
+always @(in) begin
 		case({in[5],in[0]}) 
 			0: begin
 				case(in[4:1]) 

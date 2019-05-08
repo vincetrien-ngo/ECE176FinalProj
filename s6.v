@@ -1,7 +1,7 @@
 module s6(
 	output reg[3:0] s6,
 	input [5:0] in);
-	initial begin
+	always @(in) begin
 
 		case({in[5],in[0]}) 
 			0: begin
