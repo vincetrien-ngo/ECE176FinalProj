@@ -40,12 +40,13 @@ module tripleDes_tb();
 
     end
 
-
+    initial begin
+        assign e = 1'b1;
+        //assign key1 = 56'b0;
+        //assign key2 = 56'b0;
+        //assign intext = 64'b0;
+    end
 	
-	
-	//keyMixer k (.nextkey, .newkey, .t, .in(key2));
-	
-	des d(.out(password), .e(e), .k(key1), .in(intext));
 /*
     tripledes u0(
         .password(password) ,
@@ -55,4 +56,5 @@ module tripleDes_tb();
         .intext(intext)     
     );
 */
+
 endmodule
