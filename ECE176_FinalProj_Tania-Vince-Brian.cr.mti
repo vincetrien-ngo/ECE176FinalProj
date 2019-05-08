@@ -1,9 +1,9 @@
-C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/des.v
+C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_post_sf.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_post_sf.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module des
+-- Compiling module p_post_sf
 
 Top level modules:
-	des
+	p_post_sf
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/enot.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -19,6 +19,20 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	s_function
 
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_initial.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_initial.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module p_initial
+
+Top level modules:
+	p_initial
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_key2.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_key2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module p_key2
+
+Top level modules:
+	p_key2
+
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/equals.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module equals
@@ -33,12 +47,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	s1
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_keyinit.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_keyinit.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module expansion
+-- Compiling module p_keyinit
 
 Top level modules:
-	expansion
+	p_keyinit
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/tripleDes_tb.vt
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tripleDes_tb
+
+Top level modules:
+	tripleDes_tb
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s2.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -47,26 +68,26 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	s2
 
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module expansion
+
+Top level modules:
+	expansion
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/topmoduleTripleDes.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tripledes
+
+Top level modules:
+	tripledes
+
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_function.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module p_function
 
 Top level modules:
 	p_function
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module expansion_tb
-
-Top level modules:
-	expansion_tb
-
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module keyMixer
-
-Top level modules:
-	keyMixer
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s3.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -75,12 +96,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	s3
 
-} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/keyMixer.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module expon
+-- Compiling module keyMixer
 
 Top level modules:
-	expon
+	keyMixer
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expansion_tb.vt
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module expansion_tb
+
+Top level modules:
+	expansion_tb
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s4.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -88,6 +116,13 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	s4
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/expon_is_expkc.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module expon
+
+Top level modules:
+	expon
 
 } {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/s5.v
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -116,5 +151,19 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 
 Top level modules:
 	s8
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/decrypt.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module decrypt
+
+Top level modules:
+	decrypt
+
+} {} {}} C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_inverse.v {1 {vlog -work work -stats=none C:/Users/V_Trien_Ngo-PC/Documents/GitHub/ECE176FinalProj/p_inverse.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module p_inverse
+
+Top level modules:
+	p_inverse
 
 } {} {}}
