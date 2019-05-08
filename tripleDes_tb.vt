@@ -9,7 +9,7 @@ module tripleDes_tb();
     integer handle1, handle2, handle3;
 
     initial begin
-        outfile=$fopen("intext.txt","w");
+        outfile=$fopen("intext.txt","r");
         outfile0=$fopen("key1.txt","r");
         outfile1=$fopen("key2.txt","r");
 
