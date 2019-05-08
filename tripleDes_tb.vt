@@ -49,9 +49,9 @@ module tripleDes_tb();
 */
     initial begin
         assign e = 1'b1;
-        assign key1 = 64'h0a000a00;
+        assign key1 = 64'h133457799BBCDFF1;
         //assign key2 = 56'b0;
-        assign intext = 64'h000a000a;
+        assign intext = 64'h0123456789ABCDEF;
 		assign tin = 55;
     end
 

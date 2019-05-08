@@ -1,4 +1,4 @@
-module expansion(output [47:0] out, input [32:1] in);
+module expansion(output [47:0] out, input [1:32] in);
     
 
     assign out = {	in[32], in[1], in[2], in[3], in[4], in[5], 

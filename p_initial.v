@@ -1,4 +1,4 @@
-module p_initial(input [64:1] in,  output  [64:1] out);
+module p_initial(input [1:64] in,  output  [64:1] out);
 
 	assign out = 
 				{	in[58], in[50], in[42], in[34], in[26], in[18], in[10], in[2],

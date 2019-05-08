@@ -5,11 +5,11 @@ module keyMixer (output reg [27:0] nextkey, input t, input [27:0] in);
   //reg [27:0] a, b;
   always @(*) begin
     if (t) begin
-      nextkey =in[27:0] <<< 1;
+      nextkey ={in[26:0],in[27]};
       //b =in[55:28] <<< 1; 
 	  end
     else begin
-      nextkey =in[27:0] <<< 2;
+      nextkey ={in[25:0],in[27:26]};
       //b =in[55:28] <<< 2; 
 	  end
 
